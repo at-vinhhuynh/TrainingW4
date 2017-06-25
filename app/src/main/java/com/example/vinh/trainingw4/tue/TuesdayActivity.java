@@ -40,7 +40,7 @@ public class TuesdayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //            startProgress();
-                testCustomThread();
+//            testCustomThread();
             }
         });
 

@@ -44,28 +44,35 @@ class MondayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monday);
-        ViewPager mViewPager = (ViewPager) findViewById(R.id.viewPager);
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
 
         mUrls.add("http://orig12.deviantart.net/e196/f/2014/349/b/e/i_hate_you__i_love_you__zoro_x_reader__by_riseagainstevil-d88ovwj.png");
         mUrls.add("http://chibi.info/wp-content/uploads/2016/12/anh-luffy-chibi-4.png");
         mUrls.add("https://s-media-cache-ak0.pinimg.com/originals/49/c9/0d/49c90d31044ae688aaf6cc94d1ef4e83.png");
 
-        ViewPagerAdapter mAdapter = new ViewPagerAdapter(this, mUrls);
-        FragmentPagerAdapter mFragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager(), mUrls);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(this, mUrls);
+        FragmentPagerAdapter fragmentPagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager(), mUrls);
 
-        mViewPager.setAdapter(mAdapter);
+        viewPager.setAdapter(adapter);
+//        initViewPager(viewPager);
+
 //        mTabLayout.setupWithViewPager(mViewPager);
 //        customTabView(TabType.TEXT_ONLY);
+    }
+
+    private void initViewPager(ViewPager viewPager) {
+        viewPager.setClipToPadding(false);
+        viewPager.setPadding(240, 0, 240, 0);
     }
 
     private void customTabView(TabType tabType) {
         if (tabType == TabType.BOTH_TEXT_ICON) {
             for (int i = 0; i < mTabLayout.getTabCount(); i++) {
-                TextView tabOne = (TextView) LayoutInflater.from(this).inflate(R.layout.tab_item, null);
-                tabOne.setText(getString(R.string.tab_name));
-                tabOne.setCompoundDrawablesWithIntrinsicBounds(0, mTabIcons[i], 0, 0);
-                mTabLayout.getTabAt(i).setCustomView(tabOne);
+                TextView tab = (TextView) LayoutInflater.from(this).inflate(R.layout.tab_item, null);
+                tab.setText(getString(R.string.tab_name));
+                tab.setCompoundDrawablesWithIntrinsicBounds(0, mTabIcons[i], 0, 0);
+                mTabLayout.getTabAt(i).setCustomView(tab);
             }
             return;
         }
@@ -78,7 +85,7 @@ class MondayActivity extends AppCompatActivity {
         }
 
         if (tabType == TabType.TEXT_ONLY) {
-            // Do nothing
+            // Do nothing a hi hi
         }
     }
 

@@ -32,9 +32,9 @@ class MondayActivity extends AppCompatActivity {
             R.drawable.ic_setting,
     };
     private static final int[] mTabIconsSelected = {
-            R.drawable.ic_liked,
-            R.drawable.ic_profile_selected,
-            R.drawable.ic_setting_selected
+            R.drawable.bg_tab_like,
+            R.drawable.bg_tab_profile,
+            R.drawable.bg_tab_setting
     };
 
     private List<String> mUrls = new ArrayList<>();
@@ -57,7 +57,7 @@ class MondayActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 //        initViewPager(viewPager);
 
-//        mTabLayout.setupWithViewPager(mViewPager);
+//        mTabLayout.setupWithViewPager(viewPager);
 //        customTabView(TabType.TEXT_ONLY);
     }
 

@@ -7,7 +7,6 @@ import android.view.View;
  * Created by VinhHlb on 6/25/2017.
  */
 class b extends a {
-
     @Override
     protected void onTransform(View view, float position) {
         view.setPivotX(position < 0 ? 0 : view.getWidth());

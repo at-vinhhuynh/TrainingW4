@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="#008000"
+        android:textSize="25sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/btnDestroy"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Destroy" />
+</LinearLayout>

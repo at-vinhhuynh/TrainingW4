@@ -25,7 +25,7 @@ import java.util.List;
  * Copyright © 2016 AsianTech inc.
  * Created by VinhHlb on 6/25/2017.
  */
-class MondayActivity extends AppCompatActivity {
+public class MondayActivity extends AppCompatActivity {
     private static final int[] mTabIcons = {
             R.drawable.ic_like,
             R.drawable.ic_profile,

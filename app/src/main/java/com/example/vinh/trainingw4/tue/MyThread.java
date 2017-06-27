@@ -6,7 +6,6 @@ import android.util.Log;
  * Copyright © 2016 AsianTech inc.
  * Created by VinhHlb on 6/25/2017.
  */
-
 public class MyThread extends Thread {
     private static final String TAG = MyThread.class.getSimpleName();
     private int mCount;

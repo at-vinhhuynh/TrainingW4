@@ -2,4 +2,5 @@
     <string name="app_name">TrainingW4</string>
     <string name="content_description">contentdescription</string>
     <string name="tab_name">TabName</string>
+    <string name="download">Download</string>
 </resources>

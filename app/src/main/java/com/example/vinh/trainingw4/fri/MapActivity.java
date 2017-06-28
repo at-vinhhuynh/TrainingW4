@@ -10,7 +10,6 @@ import com.example.vinh.trainingw4.R;
  * Copyright © 2016 AsianTech inc.
  * Created by VinhHlb on 6/28/2017.
  */
-
 public class MapActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

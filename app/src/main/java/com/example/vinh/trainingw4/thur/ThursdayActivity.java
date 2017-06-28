@@ -12,7 +12,6 @@ import com.example.vinh.trainingw4.R;
  * Copyright © 2016 AsianTech inc.
  * Created by VinhHlb on 6/27/2017.
  */
-
 public class ThursdayActivity extends AppCompatActivity {
     private MyBroadcastReceiver mMyBroadcastReceiver;
     @Override

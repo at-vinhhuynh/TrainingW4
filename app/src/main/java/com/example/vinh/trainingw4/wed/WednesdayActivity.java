@@ -84,15 +84,12 @@ public class WednesdayActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             Log.d(TAG, "doInBackground: " + strings[0]);
             int count;
-
             try {
-
                 URL url = new URL(strings[0]);
                 URLConnection conexion = url.openConnection();
                 conexion.connect();
 
                 int lenghtOfFile = conexion.getContentLength();
-                FileOutputStream obj;
                 InputStream input = new BufferedInputStream(url.openStream());
                 String Path = "/sdcard/";
                 OutputStream output = new FileOutputStream(Path + Calendar.getInstance().getTimeInMillis() + ".jpg");

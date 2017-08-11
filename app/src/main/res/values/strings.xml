@@ -7,4 +7,5 @@
     <string name="stop">Stop</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCm2e7Tg6NNoMmlPNa8zMP9LPtvDserHGI</string>
 </resources>
